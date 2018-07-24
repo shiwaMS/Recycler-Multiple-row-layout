@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    private static final int TOTAL_ROW_COUNT = 20;
 
     private RecyclerView multipleRowRecyclerView;
     private MultipleRowAdapter multipleRowAdapter;
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         String content;
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < TOTAL_ROW_COUNT; i++) {
 
             if (i == 0 || i == 5 || i == 9) {
                 type = AppConstant.FIRST_ROW;
